@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 const filePath = 'abc.txt';
 
 fs.readFile(filePath, 'utf8', (err, data) => {
@@ -6,6 +7,8 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     console.error('Error reading file:', err.message);
     return;
   }
+
   console.log('File Contents:\n');
+  
   console.log(data);
 });
